@@ -88,3 +88,8 @@ sys.use_fifo_ui=1
 
 # Wifi
 wifi.interface=wlan0
+
+# Qualcomm® aptX™
+persist.bt.enableAptXHD=true
+persist.service.btui.use_aptx=1
+persistent.bt.a2dp_offload_cap=sbc-aptx-aptXHD
