@@ -70,6 +70,10 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.recovery.bacon.rc \
     ueventd.bacon.rc
+    
+# TextClassifier
+PRODUCT_PACKAGES += \
+    textclassifier.bundle1
 
 TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so \
