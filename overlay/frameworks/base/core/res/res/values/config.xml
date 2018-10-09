@@ -118,6 +118,9 @@
          that support pulsating and RGB control would set this config
          to 75. -->
     <integer name="config_deviceLightCapabilities">107</integer>
+    
+    <bool name="config_button_brightness_support">true</bool>
+    <integer name="config_button_brightness_default">255</integer>
 
     <!-- Night Mode -->
     <bool name="config_nightDisplayAvailable">true</bool>
