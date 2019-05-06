@@ -244,4 +244,7 @@
 
     <!-- Integer indicating wpa_supplicant scan interval in milliseconds -->
     <integer translatable="false" name="config_wifi_supplicant_scan_interval">40000</integer>
+
+    <!-- Misc -->
+    <bool name="config_buttonTextAllCaps">false</bool>
 </resources>
