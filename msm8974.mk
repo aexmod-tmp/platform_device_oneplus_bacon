@@ -17,6 +17,8 @@
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+SOUNDPICKER_10 := true
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService \
