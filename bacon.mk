@@ -22,9 +22,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 # AOSP Packages
 PRODUCT_PACKAGES += \
     messaging \
-    Terminal
-
-LAWNCHAIR_OPTOUT := true
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -73,10 +70,6 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.recovery.bacon.rc \
     ueventd.bacon.rc
-
-# Vendor security patch level
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.lineage.build.vendor_security_patch=2016-09-01
 
 TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so \

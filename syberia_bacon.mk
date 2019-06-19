@@ -20,10 +20,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from bacon device
 $(call inherit-product, device/oneplus/bacon/bacon.mk)
 
-# Inherit some common Arrow stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common Syberia stuff.
+$(call inherit-product, vendor/syberia/common.mk)
 
-PRODUCT_NAME := arrow_bacon
+PRODUCT_NAME := syberia_bacon
 PRODUCT_DEVICE := bacon
 PRODUCT_BRAND := oneplus
 PRODUCT_MANUFACTURER := OnePlus
@@ -37,3 +37,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=A0001
 
 BUILD_FINGERPRINT := oneplus/bacon/A0001:5.0.2/LRX22G/YNG1TAS0YL:user/release-keys
+
+TARGET_BOOT_ANIMATION_RES := 1080
+export SKIP_ABI_CHECKS := true
+
+SYBERIA_BUILD_TYPE := OFFICIAL

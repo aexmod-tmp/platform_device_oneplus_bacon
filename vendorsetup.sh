@@ -1,1 +1,1 @@
-add_lunch_combo arrow_bacon-userdebug
+add_lunch_combo syberia_bacon-userdebug

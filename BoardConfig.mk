@@ -15,6 +15,8 @@
 # limitations under the License.
 #
 
+ANDROID_TOP := $(shell pwd)
+
 # inherit from Oppo msm8974-common
 -include device/oppo/msm8974-common/BoardConfigCommon.mk
 
@@ -22,6 +24,8 @@
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=bacon user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1
 TARGET_KERNEL_CONFIG := fz_bacon_defconfig
 TARGET_KERNEL_SOURCE := kernel/oppo/msm8974
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
+KERNEL_TOOLCHAIN := $(ANDROID_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-4.9/bin
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := bacon,A0001
@@ -63,7 +67,7 @@ BOARD_SEPOLICY_DIRS += \
 PRODUCT_SHIPPING_API_LEVEL := 19
 
 # Snapdragon LLVM
-TARGET_USE_SDCLANG := true
+#TARGET_USE_SDCLANG := true
 
 # TWRP
 ifeq ($(WITH_TWRP),true)
