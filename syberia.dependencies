@@ -20,14 +20,14 @@
    "branch"     : "9.0"
  },
  {
-   "repository" : "ArrowOS-Devices/android_vendor_oneplus_bacon",
-   "target_path": "vendor/oneplus/bacon",
-   "branch"     : "arrow-9.x"
+   "repository" : "SyberiaProject-Devices/proprietary_vendor_oneplus",
+   "target_path": "vendor/oneplus",
+   "branch"     : "9.0"
  },
  {
-   "repository" : "ArrowOS-Devices/android_vendor_oppo_msm8974-common",
+   "repository" : "SyberiaProject-Devices/platform_vendor_oppo_msm8974-common",
    "target_path": "vendor/oppo/msm8974-common",
-   "branch"     : "arrow-9.x"
+   "branch"     : "9.0"
  },
  {
    "repository" : "LineageOS/android_packages_resources_devicesettings",
