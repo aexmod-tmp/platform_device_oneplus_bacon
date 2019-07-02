@@ -20,10 +20,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from bacon device
 $(call inherit-product, device/oneplus/bacon/bacon.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Havoc stuff.
+$(call inherit-product, vendor/havoc/config/common.mk)
 
-PRODUCT_NAME := lineage_bacon
+PRODUCT_NAME := havoc_bacon
 PRODUCT_DEVICE := bacon
 PRODUCT_BRAND := oneplus
 PRODUCT_MANUFACTURER := OnePlus
@@ -37,3 +37,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=A0001
 
 BUILD_FINGERPRINT := oneplus/bacon/A0001:5.0.2/LRX22G/YNG1TAS0YL:user/release-keys
+
+# Official
+export export HAVOC_BUILD_TYPE=Official
+
+# Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.havoc.maintainer="ClintT"
