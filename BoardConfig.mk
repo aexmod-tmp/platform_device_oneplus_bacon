@@ -17,6 +17,7 @@
 # inherit from OPPO common
 -include device/bacon/common/BoardConfigCommon.mk
 
+
 DEVICE_PATH := device/oneplus/bacon
 
 # Bootloader

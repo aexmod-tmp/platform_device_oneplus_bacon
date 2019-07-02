@@ -317,5 +317,6 @@ PRODUCT_BOOT_JARS += telephony-ext
 # Call the proprietary setup
 $(call inherit-product, vendor/oneplus/bacon/bacon-vendor.mk)
 
+
 # Inherit from oppo-common
 $(call inherit-product, device/oneplus/bacon/common/common.mk)
