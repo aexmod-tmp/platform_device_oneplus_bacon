@@ -45,6 +45,14 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/synaptics-rmi-ts.kl:system/usr/keylayout/synaptics-rmi-ts.kl
+    
+#Lawnchair
+PRODUCT_PACKAGES += \
+    Lawnchair
+    
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/etc/permissions/privapp-permissions-lawnchair.xml:system/etc/permissions/privapp-permissions-lawnchair.xml \
+    $(LOCAL_PATH)/prebuilts/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml:system/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml
 
 # NFC
 PRODUCT_PACKAGES += \
