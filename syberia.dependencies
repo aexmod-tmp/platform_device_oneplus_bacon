@@ -40,9 +40,9 @@
    "branch"     : "lineage-16.0-caf-8974"
  },
  {
-   "repository" : "LineageOS/android_hardware_qcom_display",
+   "repository" : "syberia-project/platform_hardware_qcom_display",
    "target_path": "hardware/qcom/display-caf/msm8974",
-   "branch"     : "lineage-16.0-caf-8974"
+   "branch"     : "9.0-caf-8974"
  },
  {
    "repository" : "blinoff82/android_hardware_ril",
