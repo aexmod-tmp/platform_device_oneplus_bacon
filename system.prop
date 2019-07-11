@@ -43,7 +43,7 @@ dalvik.vm.image-dex2oat-filter=speed
 ro.sf.lcd_density=480
 debug.hwui.use_buffer_age=false
 persist.hwc.mdpcomp.enable=true
-ro.opengles.version=196608
+ro.opengles.version=65539
 
 # DNS (CloudFlare)
 net.dns1=1.1.1.1
@@ -62,9 +62,6 @@ dhcp.eth0.dns1=1.1.1.1
 dhcp.eth0.dns2=1.0.0.1
 dhcp.wlan0.dns1=1.1.1.1
 dhcp.wlan0.dns2=1.0.0.1
-
-# HWUI
-debug.hwui.renderer=opengl
 
 # Media
 mm.enable.sec.smoothstreaming=true
