@@ -55,14 +55,13 @@ persist.sys.purgeable_assets=1
 # Display
 debug.hwui.use_buffer_age=false
 persist.hwc.mdpcomp.enable=true
-ro.opengles.version=196608
+ro.opengles.version=65539
 
 # Fling velocities
 ro.min.fling_velocity=160
 ro.max.fling_velocity=20000
 
 # HWUI
-debug.hwui.renderer=opengl
 ro.hwui.texture_cache_size=72 
 ro.hwui.layer_cache_size=48 
 ro.hwui.path_cache_size=32 
